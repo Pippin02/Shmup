@@ -14,6 +14,7 @@ namespace Shmup
 
         Sprite background;
         PlayerSprite playerSprite;
+        //Random comment for no reason
 
         public Game1()
         {

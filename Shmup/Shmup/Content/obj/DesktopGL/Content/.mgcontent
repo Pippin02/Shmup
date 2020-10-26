@@ -4,9 +4,9 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/College/Edinburgh/Games/Shmup (new)/Shmup/Shmup/Content/back.png</File>
-    <File>D:/College/Edinburgh/Games/Shmup (new)/Shmup/Shmup/Content/missile.png</File>
-    <File>D:/College/Edinburgh/Games/Shmup (new)/Shmup/Shmup/Content/saucer.png</File>
+    <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/back.png</File>
+    <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/missile.png</File>
+    <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/saucer.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

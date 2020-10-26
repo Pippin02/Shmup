@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/aQiBQioWda3ZH2vIlIaQRNq4G+ENIUtZraTLIYhdmYS4DsQkKSHpWXhBVMGlNG8KXqyEVi0NXxOVfL/hzxabw==",
+  "dgSpecHash": "4VdIOIgKwIfFC4gI4B4t1J81VkytrWmYkSS/+sl/3H/FN5Mt9+48+OVN4LmHtzrvTECmCGS3MDJbZAp9GPR8fg==",
   "success": true,
-  "projectFilePath": "D:\\College\\Edinburgh\\Games\\Shmup (new)\\Shmup\\Shmup\\Shmup.csproj",
+  "projectFilePath": "D:\\College\\Edinburgh\\Games\\Shmup\\Shmup\\Shmup\\Shmup.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jayjf\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\jayjf\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"

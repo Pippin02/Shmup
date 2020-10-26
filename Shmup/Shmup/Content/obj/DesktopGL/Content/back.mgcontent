@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/College/Edinburgh/Games/Shmup (new)/Shmup/Shmup/Content/back.png</SourceFile>
+  <SourceFile>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/back.png</SourceFile>
   <SourceTime>2020-10-15T10:31:53.2682427+01:00</SourceTime>
-  <DestFile>D:/College/Edinburgh/Games/Shmup (new)/Shmup/Shmup/Content/bin/DesktopGL/Content/back.xnb</DestFile>
-  <DestTime>2020-10-15T21:58:40.9595294+01:00</DestTime>
+  <DestFile>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/bin/DesktopGL/Content/back.xnb</DestFile>
+  <DestTime>2020-10-26T10:22:31.7421597+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

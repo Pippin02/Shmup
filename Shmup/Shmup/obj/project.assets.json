@@ -180,11 +180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\College\\Edinburgh\\Games\\Shmup (new)\\Shmup\\Shmup\\Shmup.csproj",
+      "projectUniqueName": "D:\\College\\Edinburgh\\Games\\Shmup\\Shmup\\Shmup\\Shmup.csproj",
       "projectName": "Shmup",
-      "projectPath": "D:\\College\\Edinburgh\\Games\\Shmup (new)\\Shmup\\Shmup\\Shmup.csproj",
+      "projectPath": "D:\\College\\Edinburgh\\Games\\Shmup\\Shmup\\Shmup\\Shmup.csproj",
       "packagesPath": "C:\\Users\\jayjf\\.nuget\\packages\\",
-      "outputPath": "D:\\College\\Edinburgh\\Games\\Shmup (new)\\Shmup\\Shmup\\obj\\",
+      "outputPath": "D:\\College\\Edinburgh\\Games\\Shmup\\Shmup\\Shmup\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
