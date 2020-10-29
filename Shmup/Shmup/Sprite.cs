@@ -6,7 +6,7 @@ namespace Shmup
 {
     class Sprite : Game1
     {
-        Texture2D spriteTexture;
+        public Texture2D spriteTexture;
         public Vector2 spritePos;
 
         public Sprite(Texture2D newTex, Vector2 newPos)
@@ -23,6 +23,23 @@ namespace Shmup
                 spriteTexture,
                 new Rectangle((int)spritePos.X, (int)spritePos.Y + 30, spriteTexture.Width, spriteTexture.Height),
                 Color.White);
+        }
+
+        public bool isColliding(Sprite otherSprite)
+        {
+            Rectangle thisRect = new Rectangle(
+                (int)spritePos.X,
+                (int)spritePos.Y,
+                spriteTexture.Width,
+                spriteTexture.Height);
+
+            Rectangle otherRect = new Rectangle(
+                (int)otherSprite.spritePos.X,
+                (int)otherSprite.spritePos.Y,
+                otherSprite.spriteTexture.Width,
+                otherSprite.spriteTexture.Height);
+
+            return thisRect.Intersects(otherRect);
         }
     }
 }

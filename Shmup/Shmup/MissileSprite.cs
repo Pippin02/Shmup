@@ -10,7 +10,8 @@ namespace Shmup
         Texture2D missileTxr;
         Vector2 missilePos;
 
-        float missileSpeed = 2;
+        float missileSpeed = 4;
+        public bool dead = false;
 
         public MissileSprite(Texture2D newTxr, Vector2 newPos) : base(newTxr, newPos)
         {
@@ -21,6 +22,7 @@ namespace Shmup
         public override void Update(GameTime gameTime, Point screenSize)
         {
             spritePos.X -= missileSpeed;
+            if (spritePos.X < -spriteTexture.Width) dead = true;
 
             base.Update(gameTime, screenSize);
         }

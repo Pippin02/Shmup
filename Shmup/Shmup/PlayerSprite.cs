@@ -9,6 +9,7 @@ namespace Shmup
         Texture2D spriteTexture;
         public Vector2 spritePos;
         float moveSpeed = 50;
+        public int playerLives = 3;
 
         public PlayerSprite(Texture2D newTxr, Vector2 newPos) : base(newTxr, newPos)
         {
