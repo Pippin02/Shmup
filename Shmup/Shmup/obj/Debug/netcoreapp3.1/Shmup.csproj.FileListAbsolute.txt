@@ -24,3 +24,29 @@ D:\College\Edinburgh\Games\Shmup (new)\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup
 D:\College\Edinburgh\Games\Shmup (new)\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.dll
 D:\College\Edinburgh\Games\Shmup (new)\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.pdb
 D:\College\Edinburgh\Games\Shmup (new)\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genruntimeconfig.cache
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\back.xnb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\missile.xnb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\saucer.xnb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Shmup.exe
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Shmup.deps.json
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Shmup.runtimeconfig.json
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Shmup.runtimeconfig.dev.json
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Shmup.dll
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Shmup.pdb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.csprojAssemblyReference.cache
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.AssemblyInfoInputs.cache
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.AssemblyInfo.cs
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.csproj.CoreCompileInputs.cache
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.csproj.CopyComplete
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.dll
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.pdb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genruntimeconfig.cache
