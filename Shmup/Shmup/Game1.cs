@@ -17,13 +17,14 @@ namespace Shmup
         Random rand = new Random();
         float spawnCooldown = 2;
 
-        Texture2D saucerTex, missileTex, backTex;
+        Texture2D saucerTex, missileTex, backTex, particleTex;
         SpriteFont uiFont, bigFont;
 
         Sprite background;
         PlayerSprite playerSprite;
 
         List<MissileSprite> missiles = new List<MissileSprite>();
+        List<ParticleSprite> particleList = new List<ParticleSprite>();
         //Random comment for no reason
 
         public Game1()
@@ -51,6 +52,7 @@ namespace Shmup
             missileTex = Content.Load<Texture2D>("missile");
             uiFont = Content.Load<SpriteFont>("DMFont");
             bigFont = Content.Load<SpriteFont>("BigFont");
+            particleTex = Content.Load<Texture2D>("particle");
 
             background = new Sprite(backTex, new Vector2());
             playerSprite = new PlayerSprite(saucerTex, new Vector2(screenSize.X / 7, screenSize.Y / 2));
@@ -78,12 +80,23 @@ namespace Shmup
 
                 if(playerSprite.playerLives > 0 && playerSprite.isColliding(missile))
                 {
+                    for(int i = 0; i < 16; i++)
+                        particleList.Add(new ParticleSprite(particleTex,
+                            new Vector2(
+                                missile.spritePos.X + (missileTex.Width / 2) - (particleTex.Width / 2),
+                                missile.spritePos.Y + (missileTex.Height / 2) - (particleTex.Width / 2)
+                                )
+                            ));
+
                     missile.dead = true;
                     playerSprite.playerLives--;
                 }
             }
 
+            foreach (ParticleSprite particle in particleList) particle.Update(gameTime, screenSize);
+
             missiles.RemoveAll(missile => missile.dead);
+            particleList.RemoveAll(particle => particle.currentLife <= 0);
 
             //Debug.Write(missiles.Count);
 
@@ -97,8 +110,9 @@ namespace Shmup
             _spriteBatch.Begin();
 
             background.Draw(_spriteBatch);
-            playerSprite.Draw(_spriteBatch);
+            if(playerSprite.playerLives >= 0) playerSprite.Draw(_spriteBatch);
             foreach (MissileSprite missile in missiles) missile.Draw(_spriteBatch);
+            foreach (ParticleSprite particle in particleList) particle.Draw(_spriteBatch);
 
             _spriteBatch.DrawString(uiFont, "Player lives: " + playerSprite.playerLives, new Vector2(6, 22), Color.White);
 

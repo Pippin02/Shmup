@@ -8,9 +8,11 @@
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/BigFont.spritefont</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/DMFont.spritefont</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/missile.png</File>
+    <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/particle.png</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/saucer.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

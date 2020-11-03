@@ -52,3 +52,4 @@ D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.pdb
 D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genruntimeconfig.cache
 D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\DMFont.xnb
 D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\BigFont.xnb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\particle.xnb
