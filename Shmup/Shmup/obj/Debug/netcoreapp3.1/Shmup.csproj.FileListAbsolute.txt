@@ -53,3 +53,5 @@ D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\obj\Debug\netcoreapp3.1\Shmup.genru
 D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\DMFont.xnb
 D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\BigFont.xnb
 D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\particle.xnb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\Missile Boom.xnb
+D:\College\Edinburgh\Games\Shmup\Shmup\Shmup\bin\Debug\netcoreapp3.1\Content\Ship Boom.xnb

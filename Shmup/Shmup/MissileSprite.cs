@@ -2,29 +2,29 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
+using System;
 
 namespace Shmup
 {
     class MissileSprite : Sprite
     {
-        Texture2D missileTxr;
-        Vector2 missilePos;
-
-        float missileSpeed = 4;
+        float maxSpeed = 1000f;
+        float acceleration = 500f;
+        float currentSpeed = 10f;
         public bool dead = false;
 
-        public MissileSprite(Texture2D newTxr, Vector2 newPos) : base(newTxr, newPos)
+        public MissileSprite(Texture2D newTxr, Vector2 newPos, float newMaxSpeed = 1000f) : base(newTxr, newPos)
         {
-            missileTxr = newTxr;
-            missilePos = newPos;
+            maxSpeed = newMaxSpeed;
         }
 
         public override void Update(GameTime gameTime, Point screenSize)
         {
-            spritePos.X -= missileSpeed;
-            if (spritePos.X < -spriteTexture.Width) dead = true;
+            currentSpeed += acceleration * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            currentSpeed = Math.Min(currentSpeed, maxSpeed);
+            spritePos.X -= currentSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            base.Update(gameTime, screenSize);
+            if (spritePos.X < -spriteTexture.Width) dead = true;
         }
     }
 }

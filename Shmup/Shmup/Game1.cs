@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -6,8 +7,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Cryptography;
 
-//bigger particles
-//particles on player death
 //progression / timer
 //sound
 //missile acceleration
@@ -22,12 +21,14 @@ namespace Shmup
         Point screenSize = new Point(800, 450);
         Random rand = new Random();
         float spawnCooldown = 2;
+        float playTime = 0;
 
         Texture2D saucerTex, missileTex, backTex, particleTex;
         SpriteFont uiFont, bigFont;
 
         Sprite background;
         PlayerSprite playerSprite;
+        SoundEffect missileBoom, shipBoom;
 
         List<MissileSprite> missiles = new List<MissileSprite>();
         List<ParticleSprite> particleList = new List<ParticleSprite>();
@@ -59,6 +60,8 @@ namespace Shmup
             uiFont = Content.Load<SpriteFont>("DMFont");
             bigFont = Content.Load<SpriteFont>("BigFont");
             particleTex = Content.Load<Texture2D>("particle");
+            missileBoom = Content.Load<SoundEffect>("Missile Boom");
+            shipBoom = Content.Load<SoundEffect>("Ship Boom");
 
             background = new Sprite(backTex, new Vector2());
             playerSprite = new PlayerSprite(saucerTex, new Vector2(screenSize.X / 7, screenSize.Y / 2));
@@ -73,13 +76,17 @@ namespace Shmup
             {
                 spawnCooldown -= (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
-            else if(playerSprite.playerLives > 0 && missiles.Count < 5)
+            else if(playerSprite.playerLives > 0 && missiles.Count < (Math.Min(playTime, 120f) / 120f) * 8 + 2)
             {
                 missiles.Add(new MissileSprite(missileTex, new Vector2(rand.Next(750, 1000), rand.Next(450 - missileTex.Height))));
                 spawnCooldown = (float)(rand.NextDouble() + 0.5);
             }
 
-            if(playerSprite.playerLives > 0) playerSprite.Update(gameTime, screenSize);
+            if (playerSprite.playerLives > 0)
+            {
+                playerSprite.Update(gameTime, screenSize);
+                playTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
 
             foreach (MissileSprite missile in missiles)
             {
@@ -97,6 +104,7 @@ namespace Shmup
 
                     missile.dead = true;
                     playerSprite.playerLives--;
+                    missileBoom.Play();
                     if(playerSprite.playerLives == 0)
                     {
                         for (int i = 0; i < 32; i++)
@@ -106,6 +114,7 @@ namespace Shmup
                                     missile.spritePos.Y + (missileTex.Height / 2) - (particleTex.Width / 2)
                                     )
                                 ));
+                        shipBoom.Play();
                     }
                 }
             }
@@ -132,6 +141,8 @@ namespace Shmup
             foreach (ParticleSprite particle in particleList) particle.Draw(_spriteBatch);
 
             _spriteBatch.DrawString(uiFont, "Player lives: " + playerSprite.playerLives, new Vector2(6, 22), Color.White);
+
+            _spriteBatch.DrawString(uiFont, "Time: " + Math.Round(playTime), new Vector2(6, 44), Color.White);
 
             if(playerSprite.playerLives <= 0)
             {
