@@ -47,8 +47,8 @@ namespace Shmup
                 new Rectangle(
                     (int)spritePos.X,
                     (int)spritePos.Y,
-                    (int)(spriteTexture.Width * (currentLife / maxLife)),
-                    (int)(spriteTexture.Height * (currentLife / maxLife))
+                    (int)(spriteTexture.Width * (currentLife / maxLife) * 2),
+                    (int)(spriteTexture.Height * (currentLife / maxLife) * 2)
                     ),
                 particleColor
                 );

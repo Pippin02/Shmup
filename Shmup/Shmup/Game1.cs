@@ -6,6 +6,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Cryptography;
 
+//bigger particles
+//particles on player death
+//progression / timer
+//sound
+//missile acceleration
+
 namespace Shmup
 {
     public class Game1 : Game
@@ -73,7 +79,8 @@ namespace Shmup
                 spawnCooldown = (float)(rand.NextDouble() + 0.5);
             }
 
-            playerSprite.Update(gameTime, screenSize);
+            if(playerSprite.playerLives > 0) playerSprite.Update(gameTime, screenSize);
+
             foreach (MissileSprite missile in missiles)
             {
                 missile.Update(gameTime, screenSize);
@@ -90,6 +97,16 @@ namespace Shmup
 
                     missile.dead = true;
                     playerSprite.playerLives--;
+                    if(playerSprite.playerLives == 0)
+                    {
+                        for (int i = 0; i < 32; i++)
+                            particleList.Add(new ParticleSprite(particleTex,
+                                new Vector2(
+                                    missile.spritePos.X + (missileTex.Width / 2) - (particleTex.Width / 2),
+                                    missile.spritePos.Y + (missileTex.Height / 2) - (particleTex.Width / 2)
+                                    )
+                                ));
+                    }
                 }
             }
 
