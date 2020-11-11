@@ -22,6 +22,7 @@ namespace Shmup
         float spawnCooldown = 2;
         float playTime = 0;
         bool musicPlaying = false;
+        float volume = 0.3f;
 
         Texture2D saucerTex, missileTex, backTex, particleTex;
         SpriteFont uiFont, bigFont;
@@ -76,6 +77,8 @@ namespace Shmup
 
             if (!musicPlaying)
             {
+                MediaPlayer.Volume = volume;
+                MediaPlayer.IsRepeating = true;
                 MediaPlayer.Play(music);
                 musicPlaying = true;
             }
