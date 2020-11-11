@@ -7,6 +7,7 @@
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/back.png</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/BigFont.spritefont</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/DMFont.spritefont</File>
+    <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/Landing v1 Looping.mp3</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/Missile Boom.wav</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/missile.png</File>
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/particle.png</File>
@@ -14,6 +15,7 @@
     <File>D:/College/Edinburgh/Games/Shmup/Shmup/Shmup/Content/Ship Boom.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

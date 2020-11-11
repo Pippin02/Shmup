@@ -2,14 +2,13 @@
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Cryptography;
 
-//progression / timer
 //sound
-//missile acceleration
 
 namespace Shmup
 {
@@ -22,6 +21,7 @@ namespace Shmup
         Random rand = new Random();
         float spawnCooldown = 2;
         float playTime = 0;
+        bool musicPlaying = false;
 
         Texture2D saucerTex, missileTex, backTex, particleTex;
         SpriteFont uiFont, bigFont;
@@ -29,6 +29,7 @@ namespace Shmup
         Sprite background;
         PlayerSprite playerSprite;
         SoundEffect missileBoom, shipBoom;
+        Song music;
 
         List<MissileSprite> missiles = new List<MissileSprite>();
         List<ParticleSprite> particleList = new List<ParticleSprite>();
@@ -62,6 +63,7 @@ namespace Shmup
             particleTex = Content.Load<Texture2D>("particle");
             missileBoom = Content.Load<SoundEffect>("Missile Boom");
             shipBoom = Content.Load<SoundEffect>("Ship Boom");
+            music = Content.Load<Song>("Landing v1 Looping");
 
             background = new Sprite(backTex, new Vector2());
             playerSprite = new PlayerSprite(saucerTex, new Vector2(screenSize.X / 7, screenSize.Y / 2));
@@ -71,6 +73,12 @@ namespace Shmup
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
+            if (!musicPlaying)
+            {
+                MediaPlayer.Play(music);
+                musicPlaying = true;
+            }
 
             if(spawnCooldown > 0)
             {

@@ -39,6 +39,12 @@
 /processorParam:TextureFormat=Compressed
 /build:DMFont.spritefont
 
+#begin Landing v1 Looping.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Landing v1 Looping.mp3
+
 #begin Missile Boom.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
